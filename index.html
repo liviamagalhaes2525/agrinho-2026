@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agroforte - Portal de Conhecimento Agrícola</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AGROFORTE</h1>
+    <p>O futuro do agro começa hoje.</p>
+</header>
+
+<nav>
+    <a href="#noticias">Notícias</a>
+    <a href="#artigos">Artigos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#ferramentas">Ferramentas</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#comunidade">Comunidade</a>
+</nav>
+
+<div class="banner">
+    <h2>Inovação e conhecimento para o agronegócio</h2>
+</div>
+
+<!-- Notícias -->
+<section id="noticias">
+    <h2>Notícias do Campo</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <div class="card-content">
+                <h3>Nova tecnologia de irrigação</h3>
+                <p>Sistemas inteligentes ajudam produtores a economizar água e aumentar a produtividade.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+            <div class="card-content">
+                <h3>Agroecologia em crescimento</h3>
+                <p>Produção sustentável ganha destaque entre agricultores brasileiros.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1492496913980-501348b61469">
+            <div class="card-content">
+                <h3>Colheita recorde de soja</h3>
+                <p>Especialistas analisam os fatores que impulsionaram o aumento da safra.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Artigos -->
+<section id="artigos">
+    <h2>Artigos e Tutoriais</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Técnicas de Plantio</h3>
+                <p>Aprenda métodos modernos para melhorar o rendimento da lavoura.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Irrigação Inteligente</h3>
+                <p>Descubra como reduzir desperdícios utilizando sensores e automação.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Agroecologia</h3>
+                <p>Práticas sustentáveis para um campo mais produtivo e ecológico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vídeos -->
+<section id="videos">
+    <h2>Vídeos Educativos</h2>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/6oTurM7gESE" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Ferramentas -->
+<section id="ferramentas">
+    <h2>Calculadora de Fertilizantes</h2>
+    <div class="ferramenta">
+        <label>Área da plantação (hectares)</label>
+        <input type="number" id="area">
+        <button onclick="calcular()">Calcular Fertilizante</button>
+        <h3 id="resultado"></h3>
+    </div>
+</section>
+
+<!-- Eventos -->
+<section id="eventos">
+    <h2>Eventos e Workshops</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Feira AgroTech 2026</h3>
+                <p>Evento com novidades em tecnologia agrícola e inovação no campo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Workshop de Irrigação</h3>
+                <p>Treinamento para produtores sobre sistemas modernos de irrigação.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comunidade -->
+<section id="comunidade">
+    <h2>Comunidade Agroforte</h2>
+    <p>Participe do nosso fórum e compartilhe experiências, dúvidas e soluções com produtores e especialistas agrícolas.</p>
+</section>
+
+<!-- Newsletter -->
+<section>
+    <div class="newsletter">
+        <h2>Receba Novidades do Agro</h2>
+        <p>Cadastre seu e-mail para receber notícias e conteúdos exclusivos.</p>
+        <input type="email" placeholder="Digite seu e-mail">
+        <button>Inscrever-se</button>
+    </div>
+</section>
+
+<!-- Downloads -->
+<section>
+    <h2>Downloads Gratuitos</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Ebook de Plantio</h3>
+                <p>Guia completo para aumentar sua produtividade.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Manual de Irrigação</h3>
+                <p>Aprenda a utilizar sistemas eficientes de irrigação.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Agroforte - Portal Agrícola</p>
+</footer>
+
+<script>
+function calcular(){
+    let area = document.getElementById("area").value;
+    let fertilizante = area * 50;
+    document.getElementById("resultado").innerHTML = "Quantidade recomendada: " + fertilizante + " kg de fertilizante.";
+}
+</script>
+
+</body>
+</html>
